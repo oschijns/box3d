@@ -222,7 +222,7 @@ void* b3GrowAlloc( void* oldMem, int oldSize, int newSize )
 	return newMem;
 }
 
-int b3GetByteCount( void )
+int32_t b3GetByteCount( void )
 {
 	return b3AtomicLoadInt( &b3_byteCount );
 }
